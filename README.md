@@ -1,2 +1,2 @@
-# Hotel
-Login information: vlasnik vlasnik_lozinka
+# DevSite
+Programerski sajt, vezba
