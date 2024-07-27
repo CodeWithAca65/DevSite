@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Najbolji kursevi programiranja - Programmer Aca</title>
+    <link rel="canonical" href="https://programmeraca.rs/" />
+    <meta name="description" content="Želiš da se baviš programiranjem, a ne znaš odakle da počneš? Upiši neki od naših kurseva i postani programer. Najbolji kursevi programiranja - Programmer Aca." />
+	<meta property="og:title" content="Najbolji kursevi programiranja - Programmer Aca" />
+	<meta property="og:description" content="Želiš da se baviš programiranjem, a ne znaš odakle da počneš? Upiši neki od naših kurseva i postani programer. Najbolji kursevi programiranja - Programmer Aca." />
+    <meta name="keywords" content="Kursevi programiranja, najbolji kursevi programiranja, kursevi programiranja, programiranje, kurs, kursevi, programer, aca, programmer aca, c++, c+, js, javascript, python, css, html, web programiranje, skola programiranja, developer, srbija">
+
+    <!-- Favicon -->
+    <link rel="icon" href="img-and-video/logo.png">
+
+    <!-- Google fonts -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- coffe and task -->
+    <div id="ucitavanje_sajta">
+        <div class="programmer"></div>
+        <p>Želite postati <b><i>PROGRAMER</i></b> ? Na pravom ste mestu.</p>
+    </div>
+
+    <div id="all">
+
+        <!-- company logo -->
+        <div class="logo mfp-move-from-top-logo"><img src="./img-and-video/logo.png" alt="Najbolji kursevi programiranja"></div>
+
+        <!-------------- header ------------>
+        <!---------------------------------->
+
+        <header>
+            <h1 class="mfp-move-from-top-text">Kursevi programiranja za sve uzraste</h1>
+            <p class="mfp-move-from-top-text">Želiš se baviti programiranjem, ali ne znaš odakle da počneš? Onda si na pravom mestu.</p>
+            <p class="mfp-move-from-top-text">Svaki kurs se održava online putem <i>Zoom</i> platforme sa mentorom. Dakle, kurs nije u formatu snimljenog video zapisa, već se predavanja obavljaju online putem platforme. Posle svakog časa na Vašoj e-adresi Vam stiže materijal koji smo radili na predavanju. Svaki kurs sadrži teorijski deo kao i deo sa vežbama i projektima. Na kraju svakog kursa uslediće provera znanja, a neki kursevi zahtevaće i izradu projektnog zadatka.</p>
+        </header>
+
+        <!---------- navigation ------------>
+        <!---------------------------------->
+
+        <nav>
+            <div>
+                <h2 id="html_naslov" class="reveal" onclick="openForm1()">HTML kurs</h2>
+                <div class="card-description mfp-move-from-top" id="card_description1">
+                    <div class="content">
+                        <p><i>Želite da saznate kako funkcioniše izrada web sajtova? Želite da znate kako da na sajtu postavite sliku i video ili da dodate naslov i paragraf? Onda je ovaj kurs idealan za Vas.</i><br><br>
+                        <b><span class="cena">Cena kursa: <i>3000 RSD</i></b></span></p>
+                        <a id="1" href="#" onclick="openForm(this.id)">Upiši kurs</a>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h2 id="css_naslov" class="reveal" onclick="openForm2()">CSS kurs</h2>
+                <div class="card-description mfp-move-from-top" id="card_description2">
+                    <div class="content">
+                        <p><i>Postavili ste sliku, video, naslov i paragraf na Vašem sajtu, ali on izgleda dosadno? Hm, znam, sada je vreme da naučimo kako da stilizujemo taj naš sajt. Da bi stilizovali sajt moramo da naučimo CSS, a to ćemo naučiti baš u ovom kursu. Dakle, ukoliko želite da stilizujete Vaš sajt ovaj kurs je idealan za Vas.</i><br><br>
+                        <b><span class="cena">Cena kursa: <i>4500 RSD</i></b></span><br><span class="placanje">(mogućnost plaćanja: dve rate)</span></p>
+                        <a id="2" href="#" onclick="openForm(this.id)">Upiši kurs</a>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h2 id="js_naslov" class="reveal" onclick="openForm3()">JavaScript kurs</h2>
+                <div class="card-description mfp-move-from-top" id="card_description3">
+                    <div class="content">
+                        <p><i>"Moj sajt izgleda vizuelno zaista lepo, ali nema funkcionalnosti. Šta da radim? Odakle da počnem sa učenjem?". Kurs JavaScript-a je odgovor na postavljena pitanja. Pomoću JavaScript-a Vašem sajtu možete dodati funkcionalnost kako bi on bio još bolji, a i sebi dati podlogu za dalje učenje web razvoja.</i><br><br>
+                        <b><span class="cena">Cena kursa: <i>5000 RSD</i></b></span><br><span class="placanje">(mogućnost plaćanja: dve rate)</span></p>
+                        <a id="3" href="#" onclick="openForm(this.id)">Upiši kurs</a>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h2 id="web_naslov" class="reveal" onclick="openForm4()">Kurs WEB programiranja</h2>
+                <div class="card-description mfp-move-from-top" id="card_description4">
+                    <div class="content">
+                        <p><i>Pojam „web programiranje“ obuhvata celokupan razvoj jednog web sajta ili web aplikacije za korišćenje na internetu. Da bi neka firma mogla olakšano da posluje, jedan od prvih koraka je izrada sopstvenog web sajta koji ce doprineti i marketingu same kompanije. U okviru ovog kursa ćemo naučiti HTML, CSS i JavaScript.</i><br><br>
+                        <b><span class="cena">Cena kursa: <i>11000 RSD</i></b></span><br><span class="placanje">(mogućnost plaćanja: tri rate)</span></p>
+                        <a id="4" href="#" onclick="openForm(this.id)">Upiši kurs</a>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h2 id="py_naslov" class="reveal" onclick="openForm5()">Python kurs</h2>
+                <div class="card-description mfp-move-from-top" id="card_description5">
+                    <div class="content">
+                        <p><i>Python je veoma popularan programski jezik opšte namene. Postao je poznat po svojoj jednostavnosti, lakoći učenja i brzini programiranja. Mnogi profesionalni programeri koriste Python bar kao pomoćni jezik, jer pomoću njega brzo i lako automatizuju razne poslove.</i><br><br>
+                        <b><span class="cena">Cena kursa: <i>6000 RSD</i></b></span><br><span class="placanje">(mogućnost plaćanja: dve rate)</span></p>
+                        <a id="5" href="#" onclick="openForm(this.id)">Upiši kurs</a>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h2 id="c_naslov" class="reveal" onclick="openForm6()">C kurs</h2>
+                <div class="card-description mfp-move-from-top" id="card_description6">
+                    <div class="content">
+                        <p><i>Odakle započeti proučavanje programskih jezika? Možda je najbolja polazna tačka programski jezik C, koji se smatra temeljem programiranja. Ako se razumete u C, mnogo ćete lakše savladati sve ostale jezike.</i><br><br>
+                        <b><span class="cena">Cena kursa: <i>6000 RSD</i></b></span><br><span class="placanje">(mogućnost plaćanja: dve rate)</span></p>
+                        <a id="6" href="#" onclick="openForm(this.id)">Upiši kurs</a>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h2 id="cpp_naslov" class="reveal" onclick="openForm7()">C++ kurs</h2>
+                <div class="card-description mfp-move-from-top" id="card_description7">
+                    <div class="content">
+                        <p><i>Ukoliko ste već savladali programski jezik C, onda je vreme da pređete na C++, koji ima ogromnu primenu u raznim oblastima programiranja.</i><br><br>
+                        <b><span class="cena">Cena kursa: <i>6000 RSD</i></b></span><br><span class="placanje">(mogućnost plaćanja: dve rate)</span></p>
+                        <a id="7" href="#" onclick="openForm(this.id)">Upiši kurs</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <header>
+            <h1 class="reveal">Pored kurseva nudimo i izradu WEB SAJTOVA</h1>
+            <p class="reveal">Želiš da biznis podigneš na viši nivo? Onda ti je definitivno potreban web sajt. Za izradu web sajta i više informacija <b><a href="izradawebsajtova.html">KLIKNI OVDE</a></b></p>
+            <br><br><br>
+        </header>
+
+        <!---------- button ------------>
+        <!------------------------------>
+
+        <button onclick="topFunction()" id="myBtn" title="Vrati me gore">⏏</button>
+
+        <!----------- form ------------->
+        <!------------------------------>
+
+        <div class="form-popup" id="myForm">
+            <form action="https://formsubmit.co/amarinkovic654321@gmail.com" method="POST">
+                <input type="hidden" name="_next" value="https://programmeraca.rs/thanks.html">
+                <input type="hidden" name="_subject" value="New email!">
+                <input type="text" name="name" required>
+                <input type="email" name="email" required>
+                <button type="submit">Send</button>
+           </form><a href="" target="_blank"></a>
+        </div>
+
+        <!---------- Utisci ------------>
+        <!------------------------------>
+        <div class="row">
+            <h1 class="utisci_naslov col-12 reveal">Utisci polaznika naših kurseva</h1>
+
+            <section class="col-3 vertical-center">
+                <img class="user reveal" src="https://static.thenounproject.com/png/2709857-200.png" alt="web programiranje programmer aca">
+                <p class="utisak reveal">"Pohađao sam kurs web programiranja i mogu reći da je zaista dobro osmišljen. Puno toga sam naučio zahvaljujući mentoru. Svaka preporuka za ovaj kurs."<br>★★★★★</p>
+                <p class="ime reveal">Stefan</p>
+            </section>
+
+            <section class="col-3 vertical-center">
+                <img class="user reveal" src="https://us.123rf.com/450wm/tuktukdesign/tuktukdesign1606/tuktukdesign160600109/59070192-user-icon-woman-profile-businesswoman-avatar-person-icon-in-vector-illustration.jpg?ver=6" alt="kursevi programiranja">
+                <p class="utisak reveal">"Pohađala sam kurs web programiranja, zaista sam zadovoljna. Projekti koje smo radili na vežbama su mi pomogli da kasnije radim sajtove za klijente. Predavanja i vežbe su odlične i hvala mantorima koji su odlični predavači."<br>★★★★★</p>
+                <p class="ime reveal">Ana</p>
+            </section>
+
+            <section class="col-3 vertical-center">
+                <img class="user reveal" src="https://us.123rf.com/450wm/tuktukdesign/tuktukdesign1606/tuktukdesign160600109/59070192-user-icon-woman-profile-businesswoman-avatar-person-icon-in-vector-illustration.jpg?ver=6" alt="html, css, javascript">
+                <p class="utisak reveal">"Upisala sam kurs CSS-a i zaista sam puno toga naučila. Mentori su odlični. Definitivno ću upisati i kurs JavaScript-a. Takođe, dodala bih, da je prednost to što su predavanja i vežbe online putem Zoom platforme i uvek možeš mentoru postaviti pitanje na koje detaljno odgovori."<br>★★★★★</p>
+                <p class="ime reveal">Marija</p>
+            </section>
+
+            <section class="col-3 vertical-center border_none">
+                <img class="user reveal" src="https://static.thenounproject.com/png/2709857-200.png" alt="python, c, c++">
+                <p class="utisak reveal">"Slušao sam kurs JavaScript-a, svaka preporuka. Kasnije kada smo u školi radili JS sve mi je već bilo poznato. Takođe, moram da dodam, da su predavači super. Test koji smo radili na kraju kursa je obuhvatio većinu gradiva koje smo naučili na kursu."<br>★★★★★</p>
+                <p class="ime reveal">Miloš</p>
+            </section>
+        </div>
+
+        <!---------- footer ------------>
+        <!------------------------------>
+
+        <footer>
+            <div class="contact">
+                <h4>Programmer Aca</h4>
+                <img class="footer_img" src="img-and-video/logo.png" alt="programmer aca kursevi programiranja">
+            </div>
+
+            <div class="contact">
+                <h3>Kontakt</h3>
+                <p>amarinkovic654321@gmail.com</p>
+                <p>+381 66 54 94 824</p>
+                <p>@_.programmer._</p>
+            </div>
+
+            <div class="stuff">
+                <h3>Naš cilj</h3>
+                <p>Naš cilj je da naši kursevi budu sve bolji i bolji,<br> a po utiscima naših polaznika kurseva,<br> mislimo da smo na pravom putu.</p>
+            </div>
+
+            <div class="stuff">
+                <h3>Kursevi koje nudimo</h3>
+                <p>
+                    1. HTML kurs <br>
+                    2. CSS kurs <br>
+                    3. JavaScript kurs <br>
+                    4. Kurs WEB programiranja <br>
+                    5. Python kurs <br>
+                    6. C kurs <br>
+                    7. C++ kurs
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,521 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+  text-decoration: none;
+  transition: all 0.4s linear;
+  border: none;
+  outline: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 180px;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: white;
+}
+
+/*----------------------------
+Ucitavanje sajta
+*-----------------------------*/ 
+.programmer{
+  font-size:5px; 
+  position : absolute;
+  left     : 50%;
+  top      : 50%;
+  width    : 22em;
+  height   : 15em;
+  margin   : -7.5em 0 0 -11em;
+}
+  
+.programmer::before, .programmer::after{
+  content : '';
+  display : block;
+  width   : 1em;
+  height  : 1em;
+  margin  : -1em 0 0 -1em;
+}
+  
+.programmer::before{
+  animation: animate 2000ms steps(1) infinite;
+}
+  
+@keyframes animate {
+  0%, 100% {box-shadow:8em 5em #070307,8em 4em #070307,6em 4em #070307,6em 5em #070307,4em 4em #070307,4em 5em #070307,4em 8em #303030,4em 9em #303030,4em 10em #303030,4em 11em #303030,4em 12em #303030,4em 13em #303030,5em 13em #303030,6em 13em #303030,7em 13em #303030,5em 9em #303030,5em 10em #303030,5em 11em #303030,5em 12em #303030,6em 12em #303030,6em 11em #303030,5em 8em #303030,6em 8em #303030,7em 8em #303030,8em 8em #303030,8em 9em #303030,7em 9em #303030,6em 9em #303030,6em 10em #303030,7em 10em #303030,8em 10em #303030,8em 11em #303030,7em 11em #303030,7em 12em #303030,8em 12em #303030,8em 13em #303030,8em 14em #303030,7em 14em #303030,6em 14em #303030,5em 14em #303030,4em 14em #303030}
+  10% {box-shadow:8em 5em #070307,8em 4em #595959,6em 4em #070307,6em 5em #070307,4em 4em #595959,4em 5em #070307,4em 9em #303030,4em 10em #303030,4em 11em #303030,4em 12em #303030,4em 13em #303030,5em 13em #303030,6em 13em #303030,7em 13em #303030,5em 9em #303030,5em 10em #303030,5em 11em #303030,5em 12em #303030,6em 12em #303030,6em 11em #303030,8em 9em #303030,7em 9em #303030,6em 9em #303030,6em 10em #303030,7em 10em #303030,8em 10em #303030,8em 11em #303030,7em 11em #303030,7em 12em #303030,8em 12em #303030,8em 13em #303030,8em 14em #303030,7em 14em #303030,6em 14em #303030,5em 14em #303030,4em 14em #303030,15em 11em #570e57,16em 11em #570e57,18em 11em #570e57,19em 11em #570e57,20em 11em #570e57,17em 11em #570e57,14em 11em #570e57,13em 11em #570e57}
+  20% {box-shadow:8em 5em #595959,6em 4em #595959,6em 5em #070307,4em 5em #595959,4em 10em #303030,4em 11em #303030,4em 12em #303030,4em 13em #303030,5em 13em #303030,6em 13em #303030,7em 13em #303030,5em 10em #303030,5em 11em #303030,5em 12em #303030,6em 12em #303030,6em 11em #303030,6em 10em #303030,7em 10em #303030,8em 10em #303030,8em 11em #303030,7em 11em #303030,7em 12em #303030,8em 12em #303030,8em 13em #303030,8em 14em #303030,7em 14em #303030,6em 14em #303030,5em 14em #303030,4em 14em #303030,14em 9em #570e57,15em 9em #570e57,16em 9em #570e57,17em 9em #570e57,18em 9em #570e57,19em 9em #570e57,20em 9em #570e57,15em 11em #4e4e9c,16em 11em #4e4e9c,17em 11em #4e4e9c,18em 11em #4e4e9c,19em 11em #4e4e9c,20em 11em #4e4e9c,13em 9em #570e57}
+  30% {box-shadow:8em 5em #595959,6em 5em #595959,4em 5em #595959,4em 11em #303030,4em 12em #303030,4em 13em #303030,5em 13em #303030,6em 13em #303030,7em 13em #303030,5em 11em #303030,5em 12em #303030,6em 12em #303030,6em 11em #303030,8em 11em #303030,7em 11em #303030,7em 12em #303030,8em 12em #303030,8em 13em #303030,8em 14em #303030,7em 14em #303030,6em 14em #303030,5em 14em #303030,4em 14em #303030,15em 9em #4e4e9c,16em 9em #4e4e9c,17em 9em #4e4e9c,18em 9em #4e4e9c,19em 9em #4e4e9c,20em 9em #4e4e9c,20em 7em #570e57,19em 7em #570e57,18em 7em #570e57,17em 7em #570e57,16em 7em #570e57,15em 7em #570e57,14em 7em #570e57,14em 11em #225c24,15em 11em #225c24,16em 11em #225c24,17em 11em #225c24,18em 11em #225c24,19em 11em #225c24,20em 11em #225c24,13em 11em #225c24,12em 11em #225c24,13em 7em #570e57,6em 3em #070307}
+  40% {box-shadow:4em 12em #303030,4em 13em #303030,5em 13em #303030,6em 13em #303030,7em 13em #303030,5em 12em #303030,6em 12em #303030,7em 12em #303030,8em 12em #303030,8em 13em #303030,8em 14em #303030,7em 14em #303030,6em 14em #303030,5em 14em #303030,4em 14em #303030,13em 5em #570e57,14em 5em #570e57,15em 5em #570e57,16em 5em #570e57,17em 5em #570e57,18em 5em #570e57,19em 5em #570e57,20em 5em #570e57,20em 7em #4e4e9c,19em 7em #4e4e9c,18em 7em #4e4e9c,17em 7em #4e4e9c,16em 7em #4e4e9c,15em 7em #4e4e9c,20em 9em #225c24,19em 9em #225c24,18em 9em #225c24,17em 9em #225c24,16em 9em #225c24,15em 9em #225c24,14em 9em #225c24,13em 9em #225c24,12em 9em #225c24,20em 11em #000000,18em 11em #000000,16em 11em #000000,14em 11em #000000,12em 11em #000000,6em 3em #070307,6em 4em #070307,6em 5em #070307}
+  50% {box-shadow:4em 13em #303030,5em 13em #303030,6em 13em #303030,7em 13em #303030,8em 13em #303030,8em 14em #303030,7em 14em #303030,6em 14em #303030,5em 14em #303030,4em 14em #303030,13em 5em #570e57,14em 5em #570e57,15em 5em #570e57,16em 5em #570e57,17em 5em #570e57,18em 5em #570e57,19em 5em #570e57,20em 5em #570e57,20em 7em #4e4e9c,19em 7em #4e4e9c,18em 7em #4e4e9c,17em 7em #4e4e9c,16em 7em #4e4e9c,15em 7em #4e4e9c,20em 9em #225c24,19em 9em #225c24,18em 9em #225c24,17em 9em #225c24,16em 9em #225c24,15em 9em #225c24,14em 9em #225c24,13em 9em #225c24,12em 9em #225c24,11em 11em #000000,13em 11em #000000,15em 11em #000000,17em 11em #000000,19em 11em #000000,6em 3em #070307,6em 4em #070307,6em 5em #070307}
+  60% {box-shadow:8em 14em #303030,7em 14em #303030,6em 14em #303030,5em 14em #303030,4em 14em #303030,13em 5em #570e57,14em 5em #570e57,15em 5em #570e57,16em 5em #570e57,17em 5em #570e57,18em 5em #570e57,19em 5em #570e57,20em 5em #570e57,20em 7em #4e4e9c,19em 7em #4e4e9c,18em 7em #4e4e9c,17em 7em #4e4e9c,16em 7em #4e4e9c,15em 7em #4e4e9c,20em 9em #225c24,19em 9em #225c24,18em 9em #225c24,17em 9em #225c24,16em 9em #225c24,15em 9em #225c24,14em 9em #225c24,13em 9em #225c24,12em 9em #225c24,12em 11em #000000,14em 11em #000000,16em 11em #000000,18em 11em #000000,20em 11em #000000,6em 3em #070307,6em 4em #070307,6em 5em #070307}
+  70% {box-shadow:15em 11em #225c24,14em 10em #225c24,13em 9em #225c24,12em 8em #225c24,16em 10em #225c24,17em 9em #225c24,18em 8em #225c24,19em 7em #225c24,20em 6em #225c24,19em 6em #225c24,20em 5em #225c24,18em 7em #225c24,17em 8em #225c24,16em 9em #225c24,15em 10em #225c24,14em 9em #225c24,13em 8em #225c24,6em 3em #070307,6em 4em #070307,6em 5em #070307}
+  80% {box-shadow:6em 3em #070307,6em 4em #070307,6em 5em #070307}
+  90% {box-shadow:15em 11em #225c24,14em 10em #225c24,13em 9em #225c24,12em 8em #225c24,16em 10em #225c24,17em 9em #225c24,18em 8em #225c24,19em 7em #225c24,20em 6em #225c24,19em 6em #225c24,20em 5em #225c24,18em 7em #225c24,17em 8em #225c24,16em 9em #225c24,15em 10em #225c24,14em 9em #225c24,13em 8em #225c24,6em 3em #070307,6em 4em #070307,6em 5em #070307}
+}
+  
+.programmer::after{ 
+  box-shadow: 3em 7em #000000,3em 8em #070307,3em 10em #070307,3em 11em #070307,3em 12em #070307,6em 1em #070307,7em 1em #070307,8em 1em #070307,9em 1em #070307,10em 1em #070307,1em 9em #070307,1em 10em #070307,1em 11em #070307,1em 12em #070307,9em 14em #070307,3em 14em #000000,11em 1em #070307,12em 1em #070307,13em 1em #070307,14em 1em #070307,15em 1em #070307,16em 1em #070307,17em 1em #070307,18em 1em #070307,19em 1em #070307,20em 1em #070307,21em 1em #070307,22em 1em #070307,22em 2em #070307,22em 3em #070307,22em 4em #070307,22em 5em #070307,22em 6em #070307,22em 7em #070307,22em 8em #070307,22em 9em #070307,22em 10em #070307,22em 11em #070307,22em 12em #000000,6em 2em #070307,18em 3em #070307,19em 3em #070307,20em 3em #070307,14em 3em #070307,1em 13em #070307,2em 13em #070307,3em 15em #070307,4em 15em #070307,5em 15em #070307,6em 15em #070307,7em 15em #070307,8em 15em #070307,9em 15em #070307,11em 13em #000000,9em 13em #000000,9em 12em #000000,9em 11em #000000,9em 10em #000000,9em 9em #000000,9em 8em #000000,9em 7em #000000,8em 7em #000000,7em 7em #000000,6em 7em #000000,5em 7em #000000,4em 7em #000000,2em 9em #000000,3em 9em #000000,3em 13em #000000,22em 13em #000000,21em 13em #000000,20em 13em #000000,19em 13em #000000,18em 13em #000000,17em 13em #000000,16em 13em #000000,15em 13em #000000,14em 13em #000000,13em 13em #000000,12em 13em #000000,15em 3em #000000,16em 3em #000000;
+}
+  
+#ucitavanje_sajta p {
+  position:absolute;
+  bottom:50px;
+  width:100%;
+  text-align:center;
+  color:rgb(0, 42, 70);
+}
+
+#all {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: grid;
+    gap: 3rem;
+  }
+}
+
+.logo, header, nav h2, .card-description, .opis {
+  padding: 0 5vw;
+}
+@media (min-width: 1024px) {
+  .logo, header, nav h2, .card-description, .opis {
+    padding: 0 11vw;
+  }
+}
+
+/*----------------------------
+Logo
+*-----------------------------*/
+.logo {
+  padding-top: 3rem;
+}
+.logo img {
+  opacity: 0.8;
+  width: 300px;
+  height: 150px;
+}
+@media (max-width: 768px) {
+  .logo img {
+    width: 100%;
+  }
+}
+
+/*----------------------------
+Header setion
+*-----------------------------*/
+header {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 5%;
+  color: rgb(0, 42, 70);
+  position: relative;
+}
+@media (min-width: 768px) {
+  header {
+    width: 76%;
+  }
+}
+header h1 {
+  font-size: min(max(1.7rem, 6vw), 2.2rem);
+  color: rgb(178, 181, 193);
+}
+header p {
+  line-height: 2rem;
+  font-size: min(max(1.9rem, 3.9vw), 1.2rem);
+}
+
+/*----------------------------
+Nav setion
+*-----------------------------*/
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 5rem 0;
+}
+nav h2 {
+  cursor: pointer;
+  color: rgb(178, 181, 193);
+  font-size: min(max(1.7rem, 6vw), 2.2rem);
+  font-weight: 900;
+}
+nav .card-description {
+  background-color: #ededed;
+  height: auto;     /* !!! */
+  overflow: auto;
+  width: 100vw;       /* !!! */
+  /*display: flex;  /* !!! */
+  display: none;    /* !!! */
+  justify-content: center;
+  align-items: center;
+}
+nav .card-description .content {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  width: 100%;
+  margin-top: 2cm;
+  margin-bottom: 2cm;
+}
+@media (max-width: 768px) {
+  nav h2{                 /* !!! */
+    font-size: 43px;
+    font-weight: bold;
+  }
+  nav .card-description { /* !!! */
+    width: 101vw;
+    position: relative;
+  }
+  nav .card-description .content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+nav .card-description .content a {
+  color: black;
+  font-size: 20px;
+  font-weight: 900;
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav .card-description .content a:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.cena {
+  font-size: 16px;
+  border-bottom: 2px solid black;
+}
+
+.placanje {
+  font-size: 12px;
+}
+
+.show {
+  height: 80;
+  padding: 10rem 15rem;
+}
+@media (max-width: 1200px) {
+  .show {
+    padding-left: 0;
+  }
+}
+
+/*----------------------------
+Dugme za vracanje na pocetak
+*-----------------------------*/
+#myBtn {
+  display: none; 
+  position: fixed; 
+  bottom: 20px;
+  right: 30px; 
+  z-index: 99; 
+  border: none; 
+  outline: none; 
+  background-color: gray;
+  opacity: 0.6;
+  color: white; 
+  cursor: pointer; 
+  padding: 15px; 
+  border-radius: 10px; 
+  font-size: 18px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+/*----------------------------
+Form
+-----------------------------*/
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  bottom: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  width: 40%;
+}
+
+.form-container {
+  width: 100%;
+  padding: 10px;
+  margin: 0px;
+  background-color: rgb(230, 227, 227);
+}
+
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.form-container .btn {
+  background-color: green;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+.form-container .cancel {
+  background-color: red;
+}
+
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .form-popup {
+    display: none;
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    width: 100%;
+  }
+  .form-container {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(230, 227, 227);
+  }
+}
+
+
+/*----------------------------
+Pitanja
+*-----------------------------*/
+
+/*----------------------------
+Opis - sekcije
+*-----------------------------*/
+.row {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 50px;
+  margin-top: 5px;
+}
+
+.user {
+  border-radius: 50%;
+  width: 100px;
+  border-right: 2px solid rgb(0, 42, 70);
+  border-left: 2px solid rgb(0, 42, 70);
+}
+
+.utisci_naslov {
+  text-align: center;
+  color: rgb(178, 181, 193);
+  margin-bottom: 25px;
+}
+
+.utisak {
+  font-style: italic;
+  color: rgb(0, 42, 70);
+}
+
+.ime {
+  font-weight: bold;
+  margin-top: 10px;
+  color: rgb(0, 42, 70);
+}
+
+.vertical-center {
+  display: grid;
+  place-items: center;
+}
+
+[class*="col-"] {
+  float: left;
+}
+
+/* Sekcije */
+section {
+  height: 300px;
+  border-right: 3px solid rgb(178, 181, 193);
+  text-align: center;
+  padding: 5px 10px;
+}
+
+.border_none {
+  border-right: none;
+}
+
+/* MOBILNI UREĐAJI */
+@media only screen and (max-width: 1000px) {
+  [class*="col-"] {
+      width: 100%;
+  }
+  section {
+    vertical-align: middle;
+    border-right: none;
+    border-bottom: 3px solid rgb(178, 181, 193);
+  }
+  .border_none {
+    border-bottom: none;
+  }
+}
+
+/* DESKTOP UREĐAJI */
+@media only screen and (min-width: 1001px) {
+  .col-3 {
+      width: 25%;
+  }
+  .col-12 {
+      width: 100%;
+  }
+}
+
+/*----------------------------
+Footer
+*-----------------------------*/
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 3rem;
+  background-color: rgb(0, 42, 70);
+  padding: 3rem 5%;
+  color: white;
+}
+.footer_img {
+  opacity: 0.95;
+}
+@media (min-width: 768px) {
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items:baseline;
+    flex-direction: row;
+    gap: 1.5rem;
+    padding: 3rem 11%;
+  }
+}
+footer h3 {
+  font-size: 9rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+@media (min-width: 768px) {
+  footer h3 {
+    font-size: 1.1rem;
+  }
+}
+footer p {
+  color: rgb(178, 181, 193);
+  font-size: 20px;
+}
+@media (min-width: 768px) {
+  footer p {
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+footer p:hover {
+  color: white;
+  cursor: default;
+}
+footer img {
+  width: 300px;
+}
+@media (min-width: 768px) {
+  footer img {
+    width: 200px;
+  }
+}
+@media (max-width: 768px) {
+  footer {
+    font-size: 15px;
+  }
+  footer h3 {
+    font-size: 20px;
+  }
+  footer p {
+    font-size: 15px;
+    font-weight: 500;
+  }
+}
+.fa {
+    color: rgb(178, 181, 193);
+}
+
+.contact, .stuff { 
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+/*----------------------------
+Animacije
+*-----------------------------*/ 
+.mfp-move-from-top{
+    animation: growDown 300ms ease-in-out forwards;
+    transform-origin: top center;
+}
+
+.mfp-move-from-top-logo {
+  animation: growDown 800ms ease-in-out forwards;
+  transform-origin: top center;
+}
+
+.mfp-move-from-top-text {
+  animation: growDown 800ms ease-in-out forwards;
+  transform-origin: top center;
+}
+
+@keyframes growDown {
+    0% {
+      transform: scaleY(0)
+    }
+    100% {
+      transform: scaleY(1)
+    }
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(30px);
+  opacity: 0;
+  transition: 0.7s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
